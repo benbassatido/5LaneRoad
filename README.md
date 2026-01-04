@@ -41,8 +41,8 @@ This project was developed as part of an Android development course assignment �
 
 ## 🧱 Architecture
 - 🖥️ **MainActivity** – UI, controls, and sound handling
-- 🧠 **GameManager** – Game logic only (no UI / context)
-- 💾 **ScoreManager** – High score management, SharedPreferences, and location handling
+- 🧠 **GameManager** – Game logic only
+- 💾 **ScoreManager** – High score management and location handling
 - 🗺️ **MapFragment** – Google Maps display
 - 🧩 Clear separation between game logic and UI components
 
