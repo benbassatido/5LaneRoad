@@ -13,22 +13,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="@dimen/btn_margin"
         android:text="Menu"
         android:textColor="@android:color/black"
-        android:textSize="34sp"
+        android:textSize="@dimen/home_text_size"
         android:textStyle="bold" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/home_SW_fast_mode"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/btn_width"
         android:layout_height="wrap_content"
         android:layout_below="@id/home_LBL_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/switch_margin"
         android:text="Fast"
         android:textColor="@color/custom_teal"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_size"
         app:thumbTint="@color/custom_teal"
         app:track="@drawable/switch_track_custom" />
 
@@ -36,41 +36,41 @@
     <Button
         android:id="@+id/home_BTN_button_mode"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
         android:layout_above="@id/home_BTN_sensor_mode"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="@dimen/btn_margin"
         android:background="@drawable/rounded_button_background"
         android:text="Start Button Mode"
         android:textAllCaps="false"
         android:textColor="@color/custom_teal"
-        android:textSize="30sp" />
+        android:textSize="@dimen/text_size" />
 
     <Button
         android:id="@+id/home_BTN_sensor_mode"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_button_background"
         android:text="Start Sensor Mode"
         android:textAllCaps="false"
         android:textColor="@color/custom_teal"
-        android:textSize="30sp" />
+        android:textSize="@dimen/text_size" />
 
     <Button
         android:id="@+id/home_BTN_top_ten"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
         android:layout_below="@id/home_BTN_sensor_mode"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="@dimen/btn_margin"
         android:background="@drawable/rounded_button_background"
         android:text="Top Ten"
         android:textAllCaps="false"
         android:textColor="@color/custom_teal"
-        android:textSize="30sp" />
+        android:textSize="@dimen/text_size" />
 
 </RelativeLayout>

@@ -11,11 +11,11 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginBottom="@dimen/margin_start_end"
         app:cardCornerRadius="0dp"
-        app:cardElevation="8dp"
+        app:cardElevation="@dimen/default_margin"
         app:strokeColor="@android:color/black"
         app:strokeWidth="2dp">
 

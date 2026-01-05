@@ -6,4 +6,11 @@
     <dimen name="btn_width_height">50dp</dimen>
     <dimen name="distance_margin_start">30dp</dimen>
     <dimen name="hearts_margin_end">30dp</dimen>
+    <dimen name="margin_start_end">16dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="home_text_size">34sp</dimen>
+    <dimen name="switch_margin">32dp</dimen>
+    <dimen name="btn_width">300dp</dimen>
+    <dimen name="btn_height">100dp</dimen>
+    <dimen name="btn_margin">60dp</dimen>
 </resources>
