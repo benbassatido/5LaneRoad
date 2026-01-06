@@ -59,12 +59,6 @@ class GameManager {
         timer.start()
     }
 
-    fun stopGame() {
-        isGameOver = true
-        timer.stop()
-        notifyChange()
-    }
-
     fun moveCarLeft() {
         if (isGameOver) return
         if (currentLane > 0) {

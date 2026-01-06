@@ -159,13 +159,6 @@ class MainActivity : AppCompatActivity(), TiltCallback {
     }
 
     private fun refreshUI() {
-        if (gameManager.isGameOver) {
-            if (!didShowGameOverDialog) {
-                didShowGameOverDialog = true
-                showSaveScoreDialog(gameManager.distance)
-            }
-            return
-        }
 
         // Distance
         distanceLabel.text = "${gameManager.distance}m"
@@ -188,7 +181,6 @@ class MainActivity : AppCompatActivity(), TiltCallback {
             when (gameManager.board[i]) {
                 GameManager.EMPTY -> {
                     nails[i].visibility = View.INVISIBLE
-                    nails[i].setImageResource(R.drawable.spike_nails)
                 }
                 GameManager.NAIL -> {
                     nails[i].visibility = View.VISIBLE
@@ -199,6 +191,11 @@ class MainActivity : AppCompatActivity(), TiltCallback {
                     nails[i].setImageResource(R.drawable.coin)
                 }
             }
+        }
+
+        if (gameManager.isGameOver && !didShowGameOverDialog) {
+            didShowGameOverDialog = true
+            showSaveScoreDialog(gameManager.distance)
         }
     }
 
