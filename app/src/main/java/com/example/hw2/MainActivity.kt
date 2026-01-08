@@ -63,11 +63,13 @@ class MainActivity : AppCompatActivity(), TiltCallback {
     override fun onResume() {
         super.onResume()
         tiltDetector?.start()
+        gameManager.resumeGame(isFastMode)
     }
 
     override fun onPause() {
         super.onPause()
         tiltDetector?.stop()
+        gameManager.pauseGame()
     }
 
     private fun initViews() {
